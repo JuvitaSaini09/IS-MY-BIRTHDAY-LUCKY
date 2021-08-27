@@ -2,7 +2,8 @@ const dob = document.querySelector("#dob");
 const luckyNo = document.querySelector("#lucky-no");
 const errorMessage = document.querySelector("#error-message");
 const checkButton = document.querySelector(".check-button");
-
+const resMessage= document.querySelector("#res-message");
+resMessage.style. display= "none";
 function OnClickHandler() {
   hideError();
   const dateOfBirth = dob.value;
@@ -31,11 +32,13 @@ function calculateLuckyNumber() {
 
 
   if (Sum % LuckyNo == 0) {
-    errorMessage.style.display = "block";
-    errorMessage.innerText ="Your birthday is lucky 🚀 !!";
+    
+    resMessage.style.display = "block";
+    resMessage.innerText ="Your birthday is lucky 🚀 !!";
   } else {
-    errorMessage.style.display = "block";
-    errorMessage.innerText ="Your birthday is not lucky 🤒 !!";
+    
+    resMessage.style.display = "block";
+    resMessage.innerText ="Your birthday is not lucky 🤒 !!";
     
   }
 
