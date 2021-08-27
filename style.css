@@ -99,7 +99,8 @@ button {
     background-color: yellow;
 }
 button:hover{
-    background-color:rgb(109, 211, 68);
+    background-color:rgb(179, 90, 214);
+    font-size: 14px;
 }
 #res-message,#error-message
 {
