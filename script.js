@@ -6,6 +6,7 @@ const resMessage= document.querySelector("#res-message");
 resMessage.style. display= "none";
 function OnClickHandler() {
   hideError();
+  resMessage.style.display = "none";
   const dateOfBirth = dob.value;
   const luckyNumber = luckyNo.value;
   if (dateOfBirth && luckyNumber) {
@@ -34,11 +35,12 @@ function calculateLuckyNumber() {
   if (Sum % LuckyNo == 0) {
     
     resMessage.style.display = "block";
+    resMessage.style.color ="green";
     resMessage.innerText ="Your birthday is lucky 🚀 !!";
   } else {
     
     resMessage.style.display = "block";
-    resMessage.innerText ="Your birthday is not lucky 🤒 !!";
+    resMessage.innerText ="Your birthday is not lucky  !!";
     
   }
 
@@ -58,3 +60,4 @@ function showError(ErrorMessageDisplay) {
 }
 
 checkButton.addEventListener("click", OnClickHandler);
+
