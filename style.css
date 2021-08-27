@@ -1,38 +1,59 @@
 html,
 body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color:#c9a4df;
+
 }
-.container{
-    margin:auto;
+:root{
+    --dark-purple:#441394;
+    --regular-purple:#3a0737;
+}
+
+.container {
+    margin: auto;
     text-align: center;
-    padding:0px 10px;
+    padding: 0px 10px;
 }
-label{
+
+.container h1{
+    background-color: var(--dark-purple);
+    color:white;
+    padding: 5px;
+    border-radius: 5px;
+}
+label {
     font-size: 23px;
-    font-weight:bold;
+    font-weight: bold;
+    color: var(--regular-purple);
 }
-label,button{
-    margin:20px auto;
+
+label,
+button {
+    margin: 20px auto;
     display: block;
-    
+
 }
-input{
-    width:70%;
-    height: 30px; 
+
+input {
+    width: 70%;
+    height: 30px;
     border: 1px solid black;
     padding-left: 10px;
 
 }
-button{
 
+button {
+    color:white;
+    background-color: var(--dark-purple);
     border: 1px solid black;
-    font-weight:bold;
-    height: 40px; 
+    font-weight: bold;
+    height: 40px;
     width: 100px;
+    border-radius: 5px;
 }
+
 
 .foot {
     position: absolute;
@@ -40,41 +61,50 @@ button{
     padding: 0px;
     width: 100%;
     color: white;
-    background-color:green;
+    background-color:var(--dark-purple);
     text-align: center;
-  }
-  
-  .social-media {
+}
+
+.social-media {
     list-style-type: none;
     padding-inline-start: 0px;
-  }
-  
-  .foot-links {
+}
+
+.foot-links {
     display: inline;
     padding: 2px;
-  
-  }
-  
-  .media-link {
+
+}
+
+.media-link {
     text-decoration: none;
     color: white;
-  }
-  
-  .link-icons {
+}
+
+.link-icons {
     height: 20px;
     padding: 2px;
-  }
-  
-  
-  
-  .social-media .hover-media:hover {
+}
+
+
+
+.social-media .hover-media:hover {
     font-weight: bold;
-    color:black;
-    background-color:yellow;
-  
-  }
-  
-  .link-icons:hover {
-    background-color:yellow;
-  }
- 
+    color: black;
+    background-color: yellow;
+
+}
+
+.link-icons:hover {
+    background-color: yellow;
+}
+button:hover{
+    background-color:rgb(70, 56, 158);
+}
+#res-message,#error-message
+{
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+    
+}
