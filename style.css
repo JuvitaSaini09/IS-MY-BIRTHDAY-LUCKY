@@ -14,33 +14,33 @@ body {
 .container {
     margin: auto;
     text-align: center;
-    padding: 0px 10px;
+    padding: 0px 5px;
 }
 
 .container h1{
     background-color: var(--dark-purple);
     color:white;
-    padding: 5px;
+    padding: 2px;
     border-radius: 5px;
 }
 label {
-    font-size: 23px;
+    font-size: 22px;
     font-weight: bold;
     color: var(--regular-purple);
 }
 
 label,
 button {
-    margin: 20px auto;
+    margin: 10px auto;
     display: block;
 
 }
 
 input {
-    width: 70%;
-    height: 30px;
-    border: 1px solid black;
-    padding-left: 10px;
+    width: 60%;
+    height: 25px;
+    border: 1.5px solid black;
+    
 
 }
 
