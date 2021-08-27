@@ -22,14 +22,24 @@ function calculateLuckyNumber(){
   const Bdate=dob.value.replaceAll("-","");
   const LuckyNo=luckyNo.value;
   console.log(typeof Bdate);
-  const Sum=0;
-  /*
+
+  var Sum=0;
+  
   for(let i=0;i<Bdate.length;i++){
     
-       Sum=Sum+(Bdate.CharAt(i));
+       Sum=Sum+Number(Bdate.charAt(i));
   }
-console.log(Sum);
-*/
+      
+      //sum,LuckyNo
+      if(Sum%LuckyNo==0){
+        showError("Your birthday is lucky 🚀 !!");
+      }
+          else{
+
+            showError("Your birthday is not lucky 🤒 !!");
+          }
+
+
 }
 function hideError()
 {
